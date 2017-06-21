@@ -1,0 +1,37 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/         	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=257,subvol=/archlinux/root,subvol=archlinux/root	0 0
+
+# /dev/sdb1 LABEL=ESP
+UUID=4CA0-DABE      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/home     	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=258,subvol=/archlinux/home,subvol=archlinux/home	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/srv      	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=259,subvol=/archlinux/srv,subvol=archlinux/srv	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/opt      	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=260,subvol=/archlinux/opt,subvol=archlinux/opt	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/usr/local	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=261,subvol=/archlinux/usr/local,subvol=archlinux/usr/local	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/var/abs  	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=262,subvol=/archlinux/var/abs,subvol=archlinux/var/abs	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/var/tmp  	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=263,subvol=/archlinux/var/tmp,subvol=archlinux/var/tmp	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/var/opt  	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=264,subvol=/archlinux/var/opt,subvol=archlinux/var/opt	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/var/log  	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=265,subvol=/archlinux/var/log,subvol=archlinux/var/log	0 0
+
+# /dev/mapper/cryptroot LABEL=linux
+UUID=bb4fc6ee-c61f-4b2c-8a4d-325c2502b419	/var/cache	btrfs     	rw,noatime,compress=lzo,ssd,discard,space_cache,subvolid=266,subvol=/archlinux/var/cache,subvol=archlinux/var/cache	0 0
+
